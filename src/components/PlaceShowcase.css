@@ -1,0 +1,46 @@
+.place-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.4rem;
+  margin-top: 1.2rem;
+}
+
+.place-card {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.place-card__image-wrap {
+  position: relative;
+  aspect-ratio: 16 / 10;
+}
+
+.place-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.place-card__index {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-text);
+  background: rgba(15, 14, 12, 0.6);
+  padding: 0.15em 0.5em;
+  border-radius: var(--radius-sm);
+}
+
+.place-card__name {
+  margin: 0.9rem 1rem 0.3rem;
+  font-size: 1rem;
+}
+
+.place-card__blurb {
+  margin: 0 1rem 1rem;
+  font-size: 0.85rem;
+}

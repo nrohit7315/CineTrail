@@ -1,0 +1,36 @@
+.remote-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.remote-image--skeleton {
+  background: linear-gradient(
+    100deg,
+    var(--color-bg-panel-2) 30%,
+    var(--color-bg-panel-3) 50%,
+    var(--color-bg-panel-2) 70%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.remote-image--fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-panel-2);
+  color: var(--color-text-faint);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+}

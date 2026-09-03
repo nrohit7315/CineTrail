@@ -1,0 +1,119 @@
+.location-picker {
+  position: relative;
+}
+
+.location-picker__trigger {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.5em 1.1em;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.location-picker__trigger:hover {
+  border-color: var(--color-teal-strong);
+  color: var(--color-text);
+}
+
+.location-picker__pin {
+  color: var(--color-orange-strong);
+}
+
+.location-picker__panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.6rem);
+  width: 260px;
+  background: var(--color-bg-panel-2);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.location-picker__geo-button {
+  width: 100%;
+  background: color-mix(in srgb, var(--color-teal) 30%, transparent);
+  border: 1px solid var(--color-teal-strong);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  padding: 0.6em;
+  font-size: 0.85rem;
+}
+
+.location-picker__geo-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.location-picker__divider {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-text-faint);
+  margin: 0.85rem 0;
+  position: relative;
+}
+
+.location-picker__divider::before,
+.location-picker__divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 35%;
+  border-top: 1px solid var(--color-border);
+}
+
+.location-picker__divider::before {
+  left: 0;
+}
+
+.location-picker__divider::after {
+  right: 0;
+}
+
+.location-picker__input {
+  width: 100%;
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.55em 0.7em;
+  font-size: 0.85rem;
+}
+
+.location-picker__hint {
+  font-size: 0.78rem;
+  color: var(--color-text-faint);
+  margin: 0.5rem 0 0;
+}
+
+.location-picker__hint--error {
+  color: var(--color-error);
+}
+
+.location-picker__results {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  max-height: 160px;
+  overflow-y: auto;
+}
+
+.location-picker__results button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  padding: 0.4em 0.2em;
+  font-size: 0.82rem;
+  border-radius: var(--radius-sm);
+}
+
+.location-picker__results button:hover {
+  background: var(--color-bg-panel-3);
+  color: var(--color-text);
+}

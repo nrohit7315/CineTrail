@@ -1,0 +1,118 @@
+.itinerary__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 1rem;
+  margin: 1.2rem 0 1.5rem;
+}
+
+.itinerary__form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.itinerary__interests {
+  flex: 1;
+  min-width: 200px;
+}
+
+.itinerary__form input {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.55em 0.7em;
+  color: var(--color-text);
+}
+
+.itinerary__form input[type="number"] {
+  width: 80px;
+}
+
+.itinerary__form button {
+  background: var(--color-orange);
+  color: #201408;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.65em 1.2em;
+  font-weight: 600;
+  font-size: 0.85rem;
+  height: fit-content;
+}
+
+.itinerary__form button:disabled {
+  opacity: 0.6;
+}
+
+.itinerary__schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.itinerary__day {
+  border-left: 2px solid var(--color-teal-strong);
+  padding-left: 1.2rem;
+}
+
+.itinerary__day-marker {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+  margin-bottom: 0.7rem;
+}
+
+.itinerary__timecode {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--color-orange-strong);
+  letter-spacing: 0.03em;
+}
+
+.itinerary__theme {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.itinerary__activities {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.itinerary__activity {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.8rem;
+}
+
+.itinerary__time {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-faint);
+  padding-top: 0.2em;
+}
+
+.itinerary__activity-title {
+  margin: 0 0 0.2rem;
+  font-size: 0.92rem;
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.itinerary__activity-desc {
+  margin: 0;
+  font-size: 0.83rem;
+}
+
+@media (max-width: 480px) {
+  .itinerary__activity {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
