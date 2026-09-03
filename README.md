@@ -1,7 +1,5 @@
 # CineTrail
 
-*(working title — rename it to whatever you land on)*
-
 A travel exploration app built around a simple idea: **every destination
 here was a filming location first.** Browse the world through the movies
 shot in it, check live weather before you go, and let an AI "location
@@ -113,6 +111,6 @@ decorative default.
 
 ## Screenshots
 
-*(Add 2-3 screenshots here once you've deployed — the hero, the explorer
-grid, and a destination detail page with the itinerary open, are the
-most useful three.)*
+![alt text](CineTrail_index.png)<br><br><br>
+![alt text](CineTrail2.png)<br><br><br>
+![alt text](CineTrail3.png)
